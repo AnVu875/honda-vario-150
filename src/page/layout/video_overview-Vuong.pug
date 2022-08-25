@@ -1,1 +1,101 @@
-script(type="module" src="../../js/video_overview.js") 
+.container
+  .text-heading_h1
+    h1 Video Tổng Quan Sản Phẩm
+  .video-review
+    .video-review__item
+      iframe(width='100%' height='384' src='https://www.youtube.com/embed/E_9GZqf1e78' title='Honda Vario 150 2018 Smartkey Bạc Nhám ▶ Tổng quan sản phẩm' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      h2.text Honda Vario 150 Smartkey Bạc Nhám
+    .video-review__item
+      iframe(width='100%' height='384' src='https://www.youtube.com/embed/CHGqhnDBCKo' title='Honda Vario 150 Smartkey Đen Nhám ▶ Tổng quan sản phẩm' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      h2.text Honda Vario 150 Smartkey Đen Nhám
+  .text-heading_h2-1
+    h2 Đăng ký để nhận tư vấn và có cơ hội sở hữu ngay <br>Vario150 2020 với giá cực ưu đãi.
+  .father-word-run
+    marquee.word-run(direction='left' behavior='scroll') Hỗ trợ trả góp 0đ - 0% lãi suất/thủ tục đơn giản.
+  .end
+    .end_table
+      .text-heading_h3
+        h3 Honda Vario 150
+        span Nhập khẩu Indo 2020 mới tại Việt Nam
+      .end_table-box
+        .text
+          span
+            sub Chỉ từ
+            span(class="money") 53.700.000 
+            span VNĐ
+        ul.end_table-ul
+          li.end_table-item2
+            div
+              i.bi.bi-lightbulb
+              span Kích thước tổng thể (d x r x c) 1919 x 679 x 1062 mm.
+          li.end_table-item2
+            div
+              i.bi.bi-lightbulb
+              span Trục cơ sở 1.280 mm.
+          li.end_table-item2
+            div
+              i.bi.bi-lightbulb
+              span Khoảng sáng gầm 132 mm.
+          li.end_table-item2
+            div
+              i.bi.bi-lightbulb
+              span Chiều cao yên 769 mm.
+          li.end_table-item2
+            div
+              i.bi.bi-lightbulb
+              span  Trọng lượng xe ở mức 112 kg.
+      .end-table-minibox
+        div
+          button.end-table-button TRẢI NGHIỆM NGAY
+        div(class="text-end_table") Đăng ký tài khoản để sử dụng miễn phí nền tảng
+    .end_choice
+      .end_choice-son
+        div
+          h2.text-heading_h2 Đăng ký nhận tư vấn
+          div
+            input.end_choice-input(type='text' placeholder='Họ Tên')
+            br
+            input.end_choice-input(type='text' pattern='^[0][3|5|7|8|9]\d{8}$' maxlength='10' minlength='10' placeholder='Số điện thoại')
+          div(style='margin:3%;')
+            span(style="font-size:22px;") Màu sắc
+          div(style='margin:3%;')
+            span(class="end_checkbox")
+              input#01(type='checkbox' value='Đen nhám' name='Option')
+              label(for='Option') Đen nhám
+            span(class="end_checkbox")
+              input#02(type='checkbox' value='Trắng tem đỏ' name='Option')
+              label(for='Option') Trắng tem đỏ
+            br
+            span(class="end_checkbox")
+              input#03(type='checkbox' value='Vàng cát' name='Option')
+              label(for='Option') Vàng cát
+            span(class="end_checkbox")
+              input#04(type='checkbox' value='Bạc nhám' name='Option')
+              label(for='Option') Bạc nhám
+            span(class="end_checkbox")
+              input#05(type='checkbox' value='Đen mâm đồng' name='Option')
+              label(for='Option') Đen mâm Đồng
+            br
+            span(class="end_checkbox")
+              input#06(type='checkbox' value='Xanh nhám' name='Option')
+              label(for='Option') Xanh nhám
+            span(class="end_checkbox")
+              input#07(type='checkbox' value='Màu Trắng' name='Option')
+              label(for='Option') Màu Trắng
+            span(class="end_checkbox")
+              input#08(type='checkbox' value='Màu đỏ nhám' name='Option')
+              label(for='Option') Màu đỏ nhám
+          div(style='margin:3%;')
+            span(style="font-size:22px;") Nhu cầu thanh toán (khác)
+          div(style='margin:3%;')
+            span(class="end_checkbox")
+              input#01(type='checkbox' value='Trả góp 0đ' name='Option')
+              label(for='Option') Trả góp 0đ
+            span(class="end_checkbox")
+              input#02(type='checkbox' value='Trả góp 0%' name='Option')
+              label(for='Option') Trả góp 0%
+          div(style='padding-bottom:10%')
+            button.end_choice-button(type='submit')
+                span
+                    span NHẬN TƯ VẤN
+script(type="module" src="../../js/video_overview.js")
