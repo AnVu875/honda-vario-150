@@ -1,0 +1,179 @@
+.container-slider {
+	max-width: 1320px;
+	padding: 0 0.5rem;
+	margin: 0 auto;
+	height: 600px;
+}
+.mainSlider {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1123.716px;
+	height: 600px;
+}
+.clearfix {
+	&::after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+.sliderLeftTop {
+	width: 70%;
+	height: 25%;
+	width: 18.7%;
+	height: 100%;
+	padding: 1rem;
+	padding-top: 0;
+	div {
+		&::before {
+			content: "";
+			display: none;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			position: absolute;
+			top: 0;
+			opacity: 0.4;
+			transition: 5s;
+		}
+		&:hover {
+			&::before {
+				display: block;
+			}
+		}
+		width: 100%;
+		height: 25%;
+		padding-bottom: 1px;
+		position: relative;
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+	}
+}
+.sliderRightBott {
+	div {
+		&::before {
+			content: "";
+			display: none;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			position: absolute;
+			top: 0;
+			opacity: 0.4;
+			transition: 5s;
+		}
+		&:hover {
+			&::before {
+				display: block;
+			}
+		}
+		width: 100%;
+		height: 25%;
+		padding-bottom: 1px;
+		position: relative;
+	}
+	width: 18.7%;
+	height: 100%;
+	padding: 1rem;
+	padding-top: 0;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+.sliderMid {
+	width: calc(100% - 37.4%);
+	height: 100%;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+.splide__track {
+	width: 100%;
+	height: 100%;
+}
+.splide__list {
+	width: 100%;
+	height: 100%;
+}
+.splide__slide {
+	width: 100%;
+	height: 100%;
+}
+.img-content {
+	display: block;
+}
+.carousel-item__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 1025px) {
+	.mainSlider {
+		display: block;
+	}
+	.sliderLeftTop {
+		display: flex;
+		width: 100%;
+		height: 25%;
+		padding: 5px 0px;
+		div {
+			width: 25%;
+			height: 100%;
+			&:not(:last-child) {
+				padding-right: 5px;
+			}
+		}
+	}
+	.sliderRightBott {
+		div {
+			width: 25%;
+			height: 100%;
+			&:not(:last-child) {
+				padding-right: 5px;
+			}
+		}
+		display: flex;
+		width: 100%;
+		height: 25%;
+		padding: 5px 0px;
+	}
+	.sliderMid {
+		height: auto;
+		width: 100%;
+	}
+}
+
+@media (max-width: 660px){
+    .sliderLeftTop{
+        height: 20%;
+    }
+    .sliderRightBott{
+        height: 20%;
+    }
+}
+
+@media (max-width: 470px){
+    .sliderLeftTop{
+        height: 15%;
+    }
+    .sliderRightBott{
+        height: 15%;
+    }
+}
+
+@media (max-width: 320px){
+    .sliderLeftTop{
+        height: 12%;
+    }
+    .sliderRightBott{
+        height: 12%;
+    }
+}
