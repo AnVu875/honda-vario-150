@@ -1,0 +1,170 @@
+.container_sub {
+    max-width: 111.2rem;
+    margin: 0 auto;
+    padding: 1rem;
+    .container_preliminary {
+        width: 100%;
+        h2 {
+            font-size: 5.5rem;
+            text-align: center;
+            margin: 5rem 0;
+            text-shadow: 0px 0px 10px rgb(0 0 0 / 30%);;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .container_detail {
+        width: 100%;
+        height: 114rem;
+        .container-detail_info {
+            display: flex;
+            width: 100%;
+            height: 25%;
+            .splide {
+                width: 50%;
+                height: 26.5rem;
+                padding: 1rem;
+                .splide__track {
+                    height: 100%;
+                    .splide__list {
+                        height: 100%;
+                        .splide__slide {
+                            height: 100%;
+                            img {
+                                display: block;
+                                width: 100%;
+                                height: 26.5rem;
+                                &:hover {
+                                    background-color: #FEFEFE;
+                                    opacity: 0.2;
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+                .splide__arrow {
+                    width: 7.5rem;
+                    height: 6rem;
+                    svg {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                }
+            }
+            p {
+                width: 50%;
+                font-size: 2rem;
+                display: inline-block;
+                align-self: center;
+                padding: 1rem;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media (max-width: 975.2px) {
+    .container_sub {
+        .container_preliminary {
+            h2 {
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 957px) {
+    .container_sub {
+        .container_preliminary {
+            p{
+                font-size: 1.8rem;
+            }
+        }
+        .container_detail {
+            .container-detail_info {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .container_sub {
+        .container_preliminary {
+            p{
+                font-size: 1.7rem;
+            }
+        }
+        .container_detail {
+            .container-detail_info {
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 785px) {
+    .container_sub {
+        .container_detail {
+            .container-detail_info {
+                height: auto;
+                flex-direction: column;
+                .splide {
+                    width: 100%;
+                    img {
+                        object-fit: cover;
+                    }
+                }
+                p {
+                    width: 100%;
+                }
+            }
+            .container-detail_info.reverse {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+@media (max-width: 613px) {
+    .container_sub {
+        .container_preliminary {
+            h2{
+                font-size: 3rem;
+            }
+        }
+        .container_preliminary {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .container_sub {
+        .container_detail {
+            .container-detail_info {
+                .splide__arrow {
+                    width: 6rem !important;
+                    height: 4.5rem !important;
+                    svg {
+                        width: 2rem !important;
+                        height: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
